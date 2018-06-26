@@ -756,7 +756,7 @@ a .icon.outline.dark:hover {
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	height: 640px;
+	height: 500px;
 }
 
 .header.fixed {
@@ -1470,7 +1470,6 @@ a.play-btn-normal {
 /* ******************** 08 - About Me ******************** */
 .about {
 	position: relative;
-	padding-top: 100px;
 	padding-bottom: 140px;
 	background: #ffffff;
 }
