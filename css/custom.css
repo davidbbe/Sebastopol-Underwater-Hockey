@@ -29,7 +29,7 @@
 	margin: 0 auto;
 }
 
-#contactform textarea {
+#a297586vform textarea {
 	min-height: 190px;
 }
 
@@ -126,6 +126,11 @@
 
 .dropdown-menu {
 	display: inline-block;
+}
+
+.g-recaptcha > div {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {

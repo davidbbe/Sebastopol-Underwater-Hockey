@@ -825,14 +825,14 @@ a .icon.outline.dark:hover {
 .no-touch ul.home-menu li a:hover > i,
 .no-touch .toggle,
 .no-touch .toggle:hover,
-.no-touch #contactform input,
-.no-touch #contactform textarea,
-.no-touch #contactform select,
-.no-touch #contactform input:focus,
-.no-touch #contactform textarea:focus,
-.no-touch #contactform select:focus,
-.no-touch #contactform input.submit,
-.no-touch #contactform input.submit:hover,
+.no-touch #a297586vform input,
+.no-touch #a297586vform textarea,
+.no-touch #a297586vform select,
+.no-touch #a297586vform input:focus,
+.no-touch #a297586vform textarea:focus,
+.no-touch #a297586vform select:focus,
+.no-touch #a297586vform input.submit,
+.no-touch #a297586vform input.submit:hover,
 .no-touch .fourofour i,
 .no-touch .fourofour a:hover > i,
 .no-touch .hoverimg,
@@ -867,7 +867,6 @@ a .icon.outline.dark:hover {
 
 /* ******************** 02 - Menu ******************** */
 .main-menu {
-	position: relative;
 	display: block;
 	width: 100%;
 	min-height: 50px;
@@ -1732,26 +1731,26 @@ li.service-item ul li:nth-child(odd) {
 }
 
 /* Styling for the contactform */
-#contactform {
+#a297586vform {
 	display: block;
 	width: 100%;
 	margin: 50px auto 0;
 	text-align: left;
 }
 
-#contactform label {
+#a297586vform label {
 	position: relative;
 	z-index: 13;
 	padding-left: 10px;
 }
 
-#contactform label {
+#a297586vform label {
 	line-height: 50px;
 }
 
-#contactform input,
-#contactform textarea,
-#contactform select {
+#a297586vform input,
+#a297586vform textarea,
+#a297586vform select {
 	display: block;
 	position: relative;
 	overflow: hidden;
@@ -1767,37 +1766,37 @@ li.service-item ul li:nth-child(odd) {
 	border: 2px solid #eeeeee;
 }
 
-#contactform select {
+#a297586vform select {
 	padding-right: 10px;
 	margin-bottom: 20px;
 }
 
 @-moz-document url-prefix() {
-	#contactform select {
+	#a297586vform select {
 		padding-top: 14px;
 	}
 }
 
-#contactform textarea {
+#a297586vform textarea {
 	line-height: 25px;
 	width: 100%;
 	min-height: 120px;
 }
 
-#contactform input.input-verify {
+#a297586vform input.input-verify {
 	padding-left: 55px;
 }
 
-#contactform input:focus,
-#contactform textarea:focus,
-#contactform select:focus {
+#a297586vform input:focus,
+#a297586vform textarea:focus,
+#a297586vform select:focus {
 	border: 2px solid #bba454;
 	background-color: #ffffff;
 	color: #1a1a1a;
 }
 
 /* The button */
-#contactform input.submit {
+#a297586vform input.submit {
 	-webkit-appearance: none;
 	cursor: pointer;
 	margin: 20px auto 0;
@@ -1819,18 +1818,18 @@ li.service-item ul li:nth-child(odd) {
 			border-radius: 2px;
 }
 
-#contactform input.submit:hover {
+#a297586vform input.submit:hover {
 	color: #ffffff;
 	background: #1a1a1a;
 }
 
-#contactform input[type="submit"][disabled] {
+#a297586vform input[type="submit"][disabled] {
 	color: #ffffff;
 	background: #bba454;
 }
 
 /* Form validation styles */
-#contactform span.required {
+#a297586vform span.required {
 	color: #ff0000;
 }
 
@@ -1897,7 +1896,6 @@ li.service-item ul li:nth-child(odd) {
 
 /* Simple footer 2 */
 .footer-two {
-	position: relative;
 	padding-top: 0;
 	padding-bottom: 25px;
 	background: #f0f0f0;
@@ -2557,7 +2555,7 @@ h3.reply-title {
 		margin-left: 15px;
 	}
 
-	#contactform input.submit {
+	#a297586vform input.submit {
 		margin: 10px auto 0;
 	}
 
@@ -2668,7 +2666,7 @@ h3.reply-title {
 		border: none;
 	}
 
-	#contactform input.submit {
+	#a297586vform input.submit {
 		margin: 0 auto;
 	}
 
@@ -2813,7 +2811,7 @@ h3.reply-title {
 		border: none;
 	}
 
-	#contactform input.submit {
+	#a297586vform input.submit {
 		margin: 0 auto;
 		width: 100%;
 	}
