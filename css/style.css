@@ -831,8 +831,8 @@ a .icon.outline.dark:hover {
 .no-touch #a297586vform input:focus,
 .no-touch #a297586vform textarea:focus,
 .no-touch #a297586vform select:focus,
-.no-touch #a297586vform input.submit,
-.no-touch #a297586vform input.submit:hover,
+.no-touch #a297586vform .submit,
+.no-touch #a297586vform .submit:hover,
 .no-touch .fourofour i,
 .no-touch .fourofour a:hover > i,
 .no-touch .hoverimg,
@@ -1471,6 +1471,9 @@ a.play-btn-normal {
 	position: relative;
 	padding-bottom: 140px;
 	background: #ffffff;
+}
+
+.about p {
 	font-size: 16px;
 	line-height: 2;
 }
@@ -1798,7 +1801,7 @@ li.service-item ul li:nth-child(odd) {
 }
 
 /* The button */
-#a297586vform input.submit {
+#a297586vform .submit {
 	-webkit-appearance: none;
 	cursor: pointer;
 	margin: 20px auto 0;
@@ -1820,7 +1823,7 @@ li.service-item ul li:nth-child(odd) {
 			border-radius: 2px;
 }
 
-#a297586vform input.submit:hover {
+#a297586vform .submit:hover {
 	color: #ffffff;
 	background: #1a1a1a;
 }
@@ -2557,7 +2560,7 @@ h3.reply-title {
 		margin-left: 15px;
 	}
 
-	#a297586vform input.submit {
+	#a297586vform .submit {
 		margin: 10px auto 0;
 	}
 
@@ -2668,7 +2671,7 @@ h3.reply-title {
 		border: none;
 	}
 
-	#a297586vform input.submit {
+	#a297586vform .submit {
 		margin: 0 auto;
 	}
 
@@ -2813,7 +2816,7 @@ h3.reply-title {
 		border: none;
 	}
 
-	#a297586vform input.submit {
+	#a297586vform .submit {
 		margin: 0 auto;
 		width: 100%;
 	}
