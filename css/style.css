@@ -1816,7 +1816,7 @@ li.service-item ul li:nth-child(odd) {
 	text-decoration: none;
 	text-transform: uppercase;
 	display: block;
-	padding: 10px 20px;
+	padding: 15px 25px;
 	color: #ffffff;
 	background: #bba454;
 	-webkit-border-radius: 2px;
@@ -1844,6 +1844,16 @@ li.service-item ul li:nth-child(odd) {
 	background: #fbe3e4;
 	color: #8a1f11;
 	border: 1px solid #fbc2c4;
+}
+
+.contact__msg {
+	border:1px solid transparent;
+	border-radius: 4px;
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	display: inline-block;
+	padding: 5px 50px;
 }
 
 /* Loader image */
