@@ -1471,6 +1471,8 @@ a.play-btn-normal {
 	position: relative;
 	padding-bottom: 140px;
 	background: #ffffff;
+	font-size: 16px;
+	line-height: 2;
 }
 
 .about .header {
