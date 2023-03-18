@@ -250,10 +250,14 @@ At the end we will have a final game and declare a champion, give out some nomin
 	</div>
 
 	<div class="row">
-		<form method="post" name="a297586vform" class="peThemeCForm" id="a297586vform">
+		<form name="Contact Form" class="peThemeCForm" id="a297586vform" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 			<fieldset>
+				<p class="hidden" style="display:none;">
+					<label>
+						Don’t fill this out if you’re human: <input name="bot-field" />
+					</label>
+				</p>
 				<div class="six columns">
-
 					<label for="name" accesskey="U"><i class="fa fa-user"></i></label>
 					<input name="name" placeholder="Name" type="text" id="name" size="30" />
 
@@ -262,16 +266,10 @@ At the end we will have a final game and declare a champion, give out some nomin
 
 					<label for="phone" accesskey="P"><i class="fa fa-phone"></i></label>
 					<input name="phone" placeholder="Phone" type="tel" id="phone" size="30" />
-
 				</div>
 				<div class="six columns">
-
 					<label for="comments" accesskey="C"><i class="fa fa-comment"></i></label>
 					<textarea name="comments" placeholder="Message" id="comments" required ></textarea>
-
-				</div>
-				<div class="twelve columns">
-					<div class="g-recaptcha" data-sitekey="6LffbK0cAAAAAPzeAVpIsjRQWXLyzqJYi7af0EhY"></div>
 				</div>
 				<div class="twelve columns">
 					<input type="submit" class="submit" id="submit" value="Send message" />
@@ -302,39 +300,31 @@ At the end we will have a final game and declare a champion, give out some nomin
 	</section>
 	<script type='text/javascript' src='js/theme.min.js'></script>
 	<script>
-		(function ($) {
-			'use strict';
-			var form = document.getElementById('a297586vform');
-			var message = $('.contact__msg'),
-					form_data;
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      const myForm = event.target;
+      const formData = new FormData(myForm);
+      $("#fa-send-icon").removeClass("fa-paper-plane").addClass("fa-spinner fa-spin");
+      
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => {
+          $(".contact__msg").text('Form successfully submitted').slideDown();
+          $("#a297586vform").find("input[type=text], input[type=email], input[type=tel], textarea").val("");
+          $("#fa-send-icon").removeClass("fa-spinner fa-spin").addClass("fa-paper-plane");
+        })
+        .catch((error) => {
+          $("#fa-send-icon").removeClass("fa-spinner fa-spin");
+          $(".contact__msg").text(error).slideDown();
+        });
+    };
 
-			// Success function
-			function done_func(response) {
-				jQuery('#a297586vform').fadeOut();
-				message.html(response);
-				message.fadeIn("slow");
-			}
-
-			// fail function
-			function fail_func(data) {
-				message.html(data.responseText);
-				message.fadeIn();
-			}
-
-			function newOnSubmit(event) {
-				event.preventDefault();
-				form_data = $(this).serialize();
-				$.ajax({
-					type: 'POST',
-					url: '/mail.php',
-					data: form_data
-				})
-				.done(done_func)
-				.fail(fail_func);
-			}
-
-			form.addEventListener('submit', newOnSubmit);
-		})(jQuery);
+    document
+      .querySelector("form")
+      .addEventListener("submit", handleSubmit);
 	</script>
 </body>
 </html>
